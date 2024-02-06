@@ -1,0 +1,149 @@
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    margin: 40px 0;
+
+&_images {
+
+
+.main_image {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    cursor: pointer;
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+   
+}
+
+
+}
+
+
+
+}
+
+
+
+
+.image_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:  10px;
+    cursor: pointer;
+
+
+&_item {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    margin-top: 20px;
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+
+
+
+}
+
+
+}
+
+
+&_content {
+    padding: 10px 0;
+    
+
+&_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: orange;
+}
+
+
+&_desc {
+    font-size: 32px;
+    font-weight: 500;
+    margin: 10px 0;
+
+}
+
+&_text {
+    font-size: 16px;
+    font-weight: 300;
+
+    
+}
+
+&_price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0;
+    
+    
+ 
+}
+
+
+&_counter {
+    margin:10px 0 ;
+    display: flex;
+
+    &_val {
+        margin:0 15px;
+        padding: 2px 12px;
+        font-size: 16px;
+        color: rgb(0, 0, 0);
+        background-color: rgb(241, 241, 11);
+        border: .1px solid black;
+        border-radius: 5px;
+    }
+
+    &_inc {
+       cursor: pointer;
+       padding: 2px 12px;
+       font-size: 18px;
+       color:rgb(0, 0, 0);
+       background-color: rgb(84, 241, 11);
+       border: .1px solid black;
+       border-radius: 5px;
+    }
+    &_dec {
+        cursor: pointer;
+        padding: 2px 12px;
+        font-size: 18px;
+        color: rgb(39, 39, 39);
+        background-color: rgb(248, 70, 70);
+        border: .1px solid black;
+        border-radius: 5px;
+    }
+
+} 
+
+
+&_btn {
+    background-color: orange;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+}
+
+
+}

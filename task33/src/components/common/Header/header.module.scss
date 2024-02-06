@@ -1,0 +1,49 @@
+
+.header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 0;
+
+
+    &_logo {
+font-weight: bold;
+font-size: 32px;
+color:#000;
+
+}
+
+&_menu {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+
+
+    &_item {
+
+
+
+        &--link {
+            color: rgb(18, 38, 18);
+            font-size: 16px;
+        }
+
+    }
+}
+
+&_right {
+    display: flex;
+    gap: 20px;
+
+}
+.avatar {
+    cursor: pointer;
+}
+
+.basket {
+    cursor: pointer;
+}
+
+
+
+}
