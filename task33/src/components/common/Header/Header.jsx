@@ -1,14 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import classes from "./header.module.scss";
 import classNames from "classnames";
 import { FiShoppingCart } from "react-icons/fi";
 import { RxAvatar } from "react-icons/rx";
 import {NavLink, useNavigate}  from "react-router-dom"
+import Button from '../../ui/ProductItem/Button/Button';
 
 
 const Header = () => {
 
+  const [data, setData] = useState(0);
+  const  [productPrice, setProductPrice] = useState(125);
+
+
+  const inc = () => {
+    setData((prev) => prev + 1);
+  }
+
+
+  const dec = () => {
+    setData((prev) => prev - 1);
+  }
+
+
+
+
 const navigate = useNavigate();
+
+
+
+const  handleClick2  = () => {
+  navigate("/assets/images/image-1.jpg")
+
+
+}
 
 
 
@@ -72,8 +97,22 @@ const handleClick = () => {
     </li>
 
 <button onClick={handleClick}>Click</button>
+<button onClick={handleClick2}>Add </button>
+
+<button onClick={inc}>+</button>
+<button onClick={dec}>-</button>
+
+<p>${data*productPrice}.00 </p>
 
 
+<Button 
+btnText='Clickkk' 
+type="primary" 
+isDisabled={true}
+bgColor='red'
+
+ />
+ 
 
   </ul>
 

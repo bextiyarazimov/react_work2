@@ -72,6 +72,11 @@ button:focus-visible {
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  /* background-image: linear-gradient(90deg, crimson, yellow, blue);
+  background-size: 500% 600%; */
+  animation: bgAnimatedGradient 12s infinite linear;
+
+
 }
 
 .container {
@@ -89,4 +94,18 @@ a {
     padding: 0 10px;
   }
   
+}
+
+@keyframes bgAnimatedGradient {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 20%;
+    }
+
+    100% {
+        background-position: 0% 85%;
+    }
 }
